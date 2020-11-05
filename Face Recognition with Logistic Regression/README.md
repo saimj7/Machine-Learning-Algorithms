@@ -6,7 +6,7 @@ Training/Testing a face recognition classifier with simple logistic regression (
 
 
 <div align="left">
-<img src=misc/dataset.png?raw=true "demo" width=500 >
+<img src=misc/dataset.png?raw=true "demo" width=600 >
 </div>
 
 ---
@@ -20,13 +20,18 @@ Training/Testing a face recognition classifier with simple logistic regression (
 
 ---
 
-## Inference
+```
+                   precision    recall  f1-score   support
 
-- To train and test: ```python run.py```. Results:
+  Donald Rumsfeld       0.72      0.72      0.72        32
+    George W Bush       0.87      0.90      0.88       129
+Gerhard Schroeder       0.83      0.66      0.73        29
+       Tony Blair       0.84      0.86      0.85        36
 
-<div align="left">
-<img src=misc/result.png?raw=true "demo" width=500 >
-</div>
+         accuracy                           0.84       226
+        macro avg       0.81      0.78      0.80       226
+     weighted avg       0.84      0.84      0.83       226
+```
 
 ```
 [PREDICTION] predicted: George W Bush, actual: George W Bush
@@ -35,7 +40,7 @@ Training/Testing a face recognition classifier with simple logistic regression (
 [PREDICTION] predicted: Tony Blair, actual: Gerhard Schroeder
 [PREDICTION] predicted: Tony Blair, actual: Tony Blair
 ```
-- 83% accuracy is not too bad. Note that we have only trained on the raw pixel intensities of images.
+- 84% accuracy is not too bad. Note that we have only trained on the raw pixel intensities of images.
 
 
 ## References
