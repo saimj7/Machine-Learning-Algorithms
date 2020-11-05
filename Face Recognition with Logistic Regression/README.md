@@ -2,17 +2,17 @@
 
 Training/Testing a face recognition classifier with simple logistic regression (LR).
 
-> We will be using a subset of 'Labeled Faces in the Wild' dataset.
+> We will be using a subset of 'Labeled Faces in the Wild' dataset:
 
 
-<div align="center">
+<div align="left">
 <img src=misc/dataset.png?raw=true "demo" width=500 >
 </div>
 
 ---
 
 ## Simple Theory
-- In general, LR performs classification using a sigmoid function (refer ```plots.py```). It extracts the feature vectors from an image and multiplies them with a weight vector (w) prior to passing into the sigmoid function for classification.
+- In general, LR performs classification using a sigmoid function (refer/run ```plots.py```). It extracts the feature vectors from an image and multiplies them with a weight vector (w) prior to passing into the sigmoid function for classification.
 - You might ask how do we compute the weights? Our goal is to find the values of 'w' that make our classifier as accurate as possible; so we will need to apply gradient ascent/descent.
 - Gradient is the error on the training data w.r.t the feature vectors. Based on this error, we update the 'w' with a factor called learning rate.
 
