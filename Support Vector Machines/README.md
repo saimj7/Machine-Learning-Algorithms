@@ -6,7 +6,7 @@ Training/Testing a SVM classifier in terms of the theory. The paper 'Support Vec
 
 
 <div align="center">
-<img src=misc/plots.png?raw=true "demo" width=600 >
+<img src=misc/plots.png?raw=true "demo" width=800 >
 </div>
 
 ---
@@ -14,7 +14,7 @@ Training/Testing a SVM classifier in terms of the theory. The paper 'Support Vec
 ## Simple Theory
 ## Linear Separability
 - SVMs work on the principle of 'linear separability'. As seen from the image above, data points in the plots A & B can be linearly separable by drawing a straight line through them. Whereas plot C has a rather different grouping (the XOR problem).
-- This line is often referred as separating hyperplane. In general, we are interested in finding a maximum margin hyperplane (i.e., the separable line is at its maximum distance between the two datapoint classes):
+- This line is often referred as separating hyperplane. In general, we are interested in finding a maximum margin hyperplane (i.e., the separable line should be at its maximum distance between the two datapoint classes):
 
 <div align="center">
 <img src=misc/maxmargin.png?raw=true "demo" width=500 >
@@ -27,9 +27,9 @@ Training/Testing a SVM classifier in terms of the theory. The paper 'Support Vec
 
 ## The Kernel Trick
 
-- Is it possible to classify non-linear data, where the datapoints cannot be separated with a straight line (as in plot C)? Turns out we with the Kernel matrix.
+- Is it possible to classify non-linear data, where the datapoints cannot be separated with a straight line (as in plot C)? Turns out we can with the Kernel matrix.
 - It is computed from the dot product of the original vectors (i.e. the pairwise similarity between all possible pairs of feature vectors).
-- Assume we have 4 datapoints A,B,C,D. We then compute a feature vector A', simply a representation of how similar A is to itself and all other data points over applying some K function: ```A' = [K(A, A), K(A, B), K(A, C), K(A, D)]```.
+- Assume we have 4 datapoints A,B,C,D. We then compute a feature vector A', which is simply a representation of how similar A is to itself and all other data points over applying some 'K' function: ```A' = [K(A, A), K(A, B), K(A, C), K(A, D)]```.
 
 > The classes in A' are now ideally linearly separable.
 
@@ -68,16 +68,16 @@ weighted avg       1.00      1.00      1.00       100
 ```
 > Linear kernel (82% acc) and polynomial kernel (100% acc).
 
-- By applying a polynomial kernel, our SVM was able to classify each data point without a problem.
+- NOTE: By applying a polynomial kernel, our SVM was able to classify each data point without a problem.
 
 
 ## References
 
 - SVM Introduction Paper (Kernel trick): https://dl.acm.org/doi/abs/10.1145/130385.130401
 - Support Vector Networks Paper (Soft margins): https://link.springer.com/article/10.1007/BF00994018
-- SVM and Kernels Implementation in Sklearn: https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html
-- XOR Problem: https://cs.nyu.edu/~mohri/mls/lecture_5.pdf
-- In-depth Theory: https://www.coursera.org/learn/machine-learning
+- SVMs and Kernels Implementation in Sklearn: https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html
+- XOR Problem Math: https://cs.nyu.edu/~mohri/mls/lecture_5.pdf
+- For In-depth Theory: https://www.coursera.org/learn/machine-learning
 
 ---
 
