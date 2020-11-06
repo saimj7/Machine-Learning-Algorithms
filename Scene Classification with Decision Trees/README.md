@@ -2,11 +2,11 @@
 
 Training/Testing a decision tree in terms of the theory and image classification.
 
-> We will be classifying a 4 scene dataset consisting of coasts, forests, highways and streets images.
+> We will be classifying a 4 scene dataset consisting of coasts, forests, highways and streets images:
 
 
 <div align="center">
-<img src=misc/dataset.png?raw=true "demo" width=800 >
+<img src=misc/dataset.png?raw=true "dataset" width=520 >
 </div>
 
 ---
@@ -17,7 +17,7 @@ Training/Testing a decision tree in terms of the theory and image classification
 - For instance, we might solve our urge of going to the movies or a sunny beach by constructing the following simple tree:
 
 <div align="center">
-<img src=misc/tree.png?raw=true "demo" width=500 >
+<img src=misc/tree.png?raw=true "tree" width=500 >
 </div>
 
 
@@ -31,7 +31,7 @@ Training/Testing a decision tree in terms of the theory and image classification
 ## Construction
 
 - Decision tree construction is built upon 'decision/informative splits' using IT.
-- To decide which feature to split on (root of the tree), we try every feature (i.e. column) and measure which split gives us the most 'information'— this is called our most informative split. It is normally the [**Information gain**](https://en.wikipedia.org/wiki/Information_gain_in_decision_trees) or the [**Gini ratio/coefficient**](https://en.wikipedia.org/wiki/Gini_coefficient).
+- To decide which feature to split on (root of the tree), we try every feature (i.e. column) and measure which split gives us the most 'information' — this is called our most informative split. It is normally the [**Information gain**](https://en.wikipedia.org/wiki/Information_gain_in_decision_trees) or the [**Gini ratio/coefficient**](https://en.wikipedia.org/wiki/Gini_coefficient).
 - Then the data is split into ```subsets > branches > leaf node/terminating blocks```. This process is repeated until we can classify all instances correctly.
 
 ---
@@ -64,7 +64,7 @@ Training/Testing a decision tree in terms of the theory and image classification
 > Final accuracy is 79%.
 
 <div align="center">
-<img src=misc/result.png?raw=true "demo" width=800 >
+<img src=misc/result.png?raw=true "result" width=800 >
 </div>
 
 ## References
