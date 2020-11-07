@@ -17,7 +17,7 @@ Training/Testing a RF classifier in terms of the theory and image classification
 - These votes are tabulated by the meta-classifier, and the category with the most votes is chosen as the final classification (k):
 
 <div align="center">
-<img src=misc/rf.png?raw=true "rf" width=500 >
+<img src=misc/rf.png?raw=true "rf" width=550 >
 </div>
 
 
@@ -35,9 +35,7 @@ Training/Testing a RF classifier in terms of the theory and image classification
 
 Before         |  After
 :-------------------------:|:-------------------------:
-![Before](mylib/utils/before.png?raw=true "before")  |  ![After](mylib/utils/after.png?raw=true "after")
-
-- To decide which feature to split on (root of the tree), we try every feature (i.e. column) and measure which split gives us the most 'information' — this is called our most informative split. It is normally the [**Information gain**](https://en.wikipedia.org/wiki/Information_gain_in_decision_trees) or the [**Gini ratio/coefficient**](https://en.wikipedia.org/wiki/Gini_coefficient).
+![Before](misc/before.png?raw=true "before")  |  ![After](misc/after.png?raw=true "after")
 
 > Randomness is typically applied to improve the accuracy of ML algorithms while reducing the risk of overfitting.
 
@@ -84,6 +82,7 @@ Before         |  After
 
 ## References
 
+- Random Forests Paper: https://link.springer.com/article/10.1023/A:1010933404324
 - Sklearn implementation: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
 - Haralick texture features: https://mahotas.readthedocs.io/en/latest/features.html
 - For In-depth Theory: https://www.pyimagesearch.com/pyimagesearch-gurus/ & https://www.coursera.org/learn/machine-learning
